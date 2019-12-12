@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegEmail"
+        android:hint="E-mail"
+        android:textAlignment="center"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegFelhNev"
+        android:layout_below="@+id/txtRegEmail"
+        android:hint="Felhasználónév"
+        android:textAlignment="center"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegJelszo"
+        android:layout_below="@+id/txtRegFelhNev"
+        android:hint="Jelszó"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegTeljesNev"
+        android:layout_below="@+id/txtRegJelszo"
+        android:hint="Teljes Név"
+        android:textAlignment="center"
+        ></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bttnRegisztracioInput"
+        android:layout_below="@+id/txtRegTeljesNev"
+        android:text="Regisztrálás"
+        ></Button>
+
+</RelativeLayout>

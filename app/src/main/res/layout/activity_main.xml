@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFelhNevvEmail"
+        android:hint="Felhasználónév vagy E-mail"
+        android:textAlignment="center"
+        ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJelszo"
+        android:layout_below="@+id/txtFelhNevvEmail"
+        android:hint="Jelszó"
+        android:textAlignment="center"></EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJelszo"
+        android:text="Bejelentkezés"
+        android:id="@+id/bttnBejelentkezes"
+        ></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bttnBejelentkezes"
+        android:id="@+id/bttnRegisztracio"
+        android:text="Regisztráció"
+        ></Button>
+</RelativeLayout>
